@@ -17,17 +17,10 @@
           <ul
             class=" dropdown-menu min-w-max  absolute  hidden  bg-white  text-base  z-50  float-left  py-2  list-none  text-left rounded-lg  shadow-lg  mt-1  m-0  bg-clip-padding  border-none"
             aria-labelledby="dropdownMenuButton2">
-            <li>
-              <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                href="#">Action</a>
-            </li>
-            <li>
-              <a class="dropdown-item  text-sm  py-2  px-4  font-normal  block  w-full  whitespace-nowrap  bg-transparent  text-gray-700  hover:bg-gray-100"
-                href="#">Another action</a>
-            </li>
-            <li>
-              <a class="dropdown-item  text-sm  py-2  px-4  font-normal  block  w-full  whitespace-nowrap  bg-transparent  text-gray-700  hover:bg-gray-100"
-                href="#">Something else here</a>
+            <li v-for="item in [0, 1, 2, 3]">
+              <router-link
+                class="dropdown-item text-sm py-2 px-8 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                :to="'/category/' + item">category{{ item }}</router-link>
             </li>
           </ul>
         </div>
@@ -42,6 +35,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { notify } from '@kyvg/vue3-notification';
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -51,7 +45,10 @@ function goLogin() {
 }
 
 function goSignUp() {
-
+  notify({
+    type: 'warn',
+    title: '敬请期待'
+  })
 }
 </script>
 <style scoped>

@@ -34,7 +34,9 @@
           </div>
 
           <div class="text-sm">
-            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Forgot your password? </a>
+            <a href="javacript:;" class="font-medium text-indigo-600 hover:text-indigo-500" @click="findback"> Forgot
+              your
+              password? </a>
           </div>
         </div>
 
@@ -84,6 +86,13 @@ function login() {
     }
   })
 
+}
+
+function findback() {
+  notify({
+    type: 'warn',
+    title: '敬请期待'
+  })
 }
 </script>
 <style lang="" scoped></style>

@@ -92,7 +92,8 @@ router.get('/getDetail/:id', (req, res) => {
 
 router.get('/getWaterfall', (req, res) => {
   const n = req.query.page
-  const imgs = new Array(20).fill(0).map((_, i) => `https://www.photock.jp/photo/middle/photo0000-${i + 5555 + n * 20}.jpg`)
+  const category = req.query.category
+  const imgs = new Array(20).fill(0).map((_, i) => `https://www.photock.jp/photo/middle/photo0000-${i + 5555 + n * 20 + category * 60}.jpg`)
   console.log(n)
   res.send({
     code: '200',

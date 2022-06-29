@@ -175,11 +175,11 @@
     </div> -->
   </div>
   <div class="visible md:invisible  w-1/12 fixed h-screen" style="background-color: #4f46e5">
-    <menu-icon class="h-auto w-1/2 mx-auto mt-2 text-white" aria-hidden="true"></menu-icon>
+    <chevron-right-icon class="h-auto w-full mx-auto mt-4 text-white" aria-hidden="true"></chevron-right-icon>
   </div>
 </template>
 <script setup lang="ts">
-import { MenuIcon } from '@heroicons/vue/solid'
+import { ChevronRightIcon } from '@heroicons/vue/solid'
 </script>
 <style scoped>
 </style>

@@ -14,7 +14,6 @@
     "axios": "^0.27.2",
     "mitt": "^3.0.0",
     "tw-elements": "^1.0.0-alpha12",
-    "v3-waterfall": "^1.1.2",
     "vue": "^3.2.25",
     "vue-router": "4"
   },

@@ -1,7 +1,7 @@
 <template>
   <DetailHeader></DetailHeader>
   <img :src="state.url" @click="seeCover"
-    class="w-full h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl mx-auto cursor-pointer" />
+    class="w-full h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl mx-auto cursor-pointer mt-12" />
   <div class="flex flex-col">
     <div class="mt-4 w-4/5 mx-auto">
       <img src="https://mdbcdn.b-cdn.net/img/new/avatars/5.webp" class="rounded-lg w-16 inline-block" alt="Avatar" />
@@ -34,12 +34,13 @@
 <script setup lang="ts">
 import DetailHeader from '../components/DetailHeader.vue'
 import Action from '../components/Action.vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { onMounted, onUnmounted, reactive, ref } from 'vue'
 import service from '../utils/request'
 import Cover from '../components/Cover.vue'
 
 const route = useRoute()
+const router = useRouter()
 
 const state = reactive({
   url: '',

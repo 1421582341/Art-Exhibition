@@ -18,8 +18,8 @@
         </div>
       </router-link>
     </li>
-    <li class="w-full flex justify-end">
-      <router-link to="/category"
+    <li class="w-full flex justify-end" style="margin-top: 0.5rem">
+      <router-link to="/category/0"
         class="text-lg text-white bg-blue-600 h-10 w-32 text-center leading-10 rounded-2xl shadow hover:shadow-xl"
         style="background-color: #4f46e5">
         view more
