@@ -37,7 +37,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, reactive } from 'vue'
-import service from '../utils/request'
+import service from '../common/js/request'
 import Cover from './Cover.vue';
 
 const state = reactive({

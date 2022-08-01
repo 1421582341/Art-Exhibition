@@ -1,9 +1,7 @@
 import axios from 'axios'
-import router from '../router/router'
+import router from '../../router/router'
 
 const service = axios.create({
-  // baseURL: 'http://localhost:5000'
-  // baseURL: 'http://106.14.116.219:5000'
   baseURL: process.env.NODE_ENV == 'development' ? 'http://localhost:5000' : 'http://106.14.116.219:5000',
   headers: {
     'token': localStorage.getItem('token') || '',

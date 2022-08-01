@@ -33,7 +33,7 @@
 <script setup lang="ts">
 import { MenuIcon, ChevronLeftIcon } from '@heroicons/vue/solid'
 import { onMounted, reactive } from 'vue'
-import service from '../utils/request'
+import service from '../common/js/request'
 import router from '../router/router'
 import { useRoute } from 'vue-router'
 

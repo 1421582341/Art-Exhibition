@@ -41,7 +41,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, reactive } from 'vue'
-import service from '../utils/request'
+import service from '../common/js/request'
 
 interface carousel {
   id: number

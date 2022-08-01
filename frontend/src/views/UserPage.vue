@@ -1,5 +1,4 @@
 <template>
-  <!-- <UserHeader></UserHeader> -->
   <div class="grid md:grid-cols-4 grid-cols-12">
     <div class="md:col-span-1 col-span-1">
       <UserSidebar></UserSidebar>

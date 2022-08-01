@@ -36,7 +36,7 @@ import Carousel from '../components/Carousel.vue'
 import Gallery from '../components/Gallery.vue'
 import Footer from '../components/Footer.vue'
 import { onMounted, reactive } from 'vue';
-import service from '../utils/request';
+import service from '../common/js/request';
 
 interface display {
   id: number

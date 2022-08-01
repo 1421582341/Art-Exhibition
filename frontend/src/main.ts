@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import './common/css/tailwind.css'
 import router from './router/router'
 import 'tw-elements'
 import Notifications from '@kyvg/vue3-notification'
