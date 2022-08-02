@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white w-full flex justify-between px-5 py-3 items-center">
-    <img src="../assets/logo.png" class="w-auto h-8">
+    <img src="../assets/logo.png" class="w-auto h-8" alt="website logo" width="32px" height="32px">
     <div class="flex justify-center">
       <div>
         <div class="dropdown relative">
@@ -28,9 +28,10 @@
     </div>
     <div class="flex justify-end space-x-3 md:space-x-10 items-center text-ms md:text-lg font-bold">
       <div class="cursor-pointer">
-        <a @click="goLogin">sign in</a>
+        <a @click="goLogin" href="javascript:;">sign in</a>
       </div>
-      <button class="bg-indigo-600 inline-block px-3 py-1 rounded-3xl text-white" @click="goSignUp">sign up</button>
+      <button class="bg-indigo-600 inline-block px-3 py-1 rounded-3xl text-white" @click="goSignUp" href="">sign
+        up</button>
     </div>
   </div>
 </template>

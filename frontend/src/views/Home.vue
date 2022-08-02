@@ -28,15 +28,14 @@
   </ul>
   <Gallery> </Gallery>
   <Footer> </Footer>
-
 </template>
 <script setup lang="ts">
 import HomeNav from '../components/HomeNav.vue'
 import Carousel from '../components/Carousel.vue'
 import Gallery from '../components/Gallery.vue'
 import Footer from '../components/Footer.vue'
-import { onMounted, reactive } from 'vue';
-import service from '../common/js/request';
+import { onMounted, reactive } from 'vue'
+import service from '../common/js/request'
 
 interface display {
   id: number

@@ -13,7 +13,7 @@
         :class="{ 'active': item.id === 0 }">
         <router-link :to="'/detail/' + item.id">
           <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img :src="item.url" class="block w-full" />
+            <img :src="item.url" class="block w-full" alt="Display content of carousel" />
             <div
               class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50">
             </div>
