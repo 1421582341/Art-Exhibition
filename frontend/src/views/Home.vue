@@ -7,7 +7,7 @@
         <div
           class="flex flex-col md:flex-row md:max-w-3xl rounded-lg bg-white shadow-lg hover:scale-110 transition duration-300 ease-in-out">
           <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
-            :src="display.url" alt="" />
+            v-lazy="display.url" alt="" sizes="(min-width: 768px) 192px, 100%" />
           <div class="p-6 flex flex-col justify-start">
             <h5 class="text-gray-900 text-xl font-medium mb-2">{{ display.title }}</h5>
             <p class="text-gray-700 text-base mb-4">

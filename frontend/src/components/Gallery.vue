@@ -5,29 +5,29 @@
         <div class="flex flex-wrap w-1/2">
           <div class="w-1/2 p-1 md:p-2" @click="showCover(0)">
             <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[0]">
+              :src="state.galleryList[0]" width="100%" height="100%">
           </div>
           <div class="w-1/2 p-1 md:p-2" @click="showCover(1)">
             <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[1]">
+              :src="state.galleryList[1]" width="100%" height="100%">
           </div>
           <div class="w-full p-1 md:p-2" @click="showCover(2)">
             <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[2]">
+              :src="state.galleryList[2]" width="100%" height="100%">
           </div>
         </div>
         <div class="flex flex-wrap w-1/2">
           <div class="w-full p-1 md:p-2" @click="showCover(3)">
             <img alt=" gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[3]">
+              :src="state.galleryList[3]" width="100%" height="100%">
           </div>
           <div class="w-1/2 p-1 md:p-2" @click="showCover(4)">
             <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[4]">
+              :src="state.galleryList[4]" width="100%" height="100%">
           </div>
           <div class="w-1/2 p-1 md:p-2" @click="showCover(5)">
             <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-              :src="state.galleryList[5]">
+              :src="state.galleryList[5]" width="100%" height="100%">
           </div>
         </div>
       </div>
