@@ -172,6 +172,13 @@
       "summary": "frontend dev",
       "shellCommand": "cd frontend && pnpm run dev",
       "safeForSimultaneousRushProcesses": true
+    },
+    {
+      "name": "build:frontend",
+      "commandKind": "global",
+      "summary": "frontend build",
+      "shellCommand": "cd frontend && pnpm run build",
+      "safeForSimultaneousRushProcesses": true
     }
   ],
 
