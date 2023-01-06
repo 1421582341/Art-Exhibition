@@ -57,7 +57,7 @@
 import { LockClosedIcon } from '@heroicons/vue/solid'
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router'
-import service from '../utils/request'
+import service from '../common/js/request'
 import { notify } from "@kyvg/vue3-notification"
 
 
@@ -85,7 +85,6 @@ function login() {
       route.push('/userPage')
     }
   })
-
 }
 
 function findback() {

@@ -1,5 +1,6 @@
 <template>
-  <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide relative w-full" data-bs-ride="carousel"
+    style="height: 45vw;">
     <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -13,7 +14,7 @@
         :class="{ 'active': item.id === 0 }">
         <router-link :to="'/detail/' + item.id">
           <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img :src="item.url" class="block w-full" />
+            <img :src="item.url" class="block w-full" alt="Display content of carousel" />
             <div
               class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50">
             </div>
@@ -41,7 +42,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, reactive } from 'vue'
-import service from '../utils/request'
+import service from '../common/js/request'
 
 interface carousel {
   id: number
