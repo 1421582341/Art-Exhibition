@@ -166,6 +166,13 @@
     //    */
     //   // "autoinstallerName": "my-task"
     // }
+    {
+      "name": "start:frontend",
+      "commandKind": "global",
+      "summary": "frontend dev",
+      "shellCommand": "cd frontend && pnpm run dev",
+      "safeForSimultaneousRushProcesses": true
+    }
   ],
 
   /**
