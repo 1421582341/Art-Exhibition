@@ -84,7 +84,7 @@ router.get('/getGallery', (req, res) => {
 });
 
 router.get('/getDetail/:id', (req, res) => {
-  const id = req.params.id;
+  const id = Number(req.params.id);
   console.log('receive getDetail request', id);
   res.send({
     code: '200',
@@ -105,8 +105,8 @@ router.get('/getDetail/:id', (req, res) => {
 });
 
 router.get('/getWaterfall', (req, res) => {
-  const n = req.query.page;
-  const category = req.query.category;
+  const n = Number(req.query.page);
+  const category = Number(req.query.category);
   const imgs = new Array(20)
     .fill(0)
     .map(
